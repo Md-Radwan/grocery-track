@@ -2,6 +2,7 @@ import React from "react";
 import NavLinks from "./NavLinks";
 import Image from "next/image";
 import Link from "next/link";
+import Marquee from "./Marquee";
 
 const Header = () => {
     const date = new Date().toLocaleDateString("bn-BD", {
@@ -9,7 +10,7 @@ const Header = () => {
     })
 
   return (
-    <div className="bg-[#FAFCFA]">
+    <div className="bg-[#FAFCFA] border-b border-base-300">
       <div className="navbar border-b border-base-300">
         <div className="w-7xl mx-auto">
           <div className="navbar-start">
@@ -68,6 +69,7 @@ const Header = () => {
         </div>
       </div>
       {/* Nav Link end */}
+      <Marquee/>
     </div>
   );
 };
