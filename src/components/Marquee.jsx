@@ -9,7 +9,7 @@ const Marquee = async () => {
   // console.log(filteredHeading);
   return (
     <div className="py-2">
-      <MarqueeText direction="right" duration={15} pauseOnHover={true}>
+      <MarqueeText direction="right" duration={12} pauseOnHover={true}>
         {filteredHeading.map((heading) => (
           <span className="px-4" key={heading.id}>
             <span>{heading.image} </span>
