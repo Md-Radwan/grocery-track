@@ -3,11 +3,12 @@ import NavLinks from "./NavLinks";
 import Image from "next/image";
 import Link from "next/link";
 import Marquee from "./Marquee";
+import AuthLinks from "./AuthLinks";
 
 const Header = () => {
-    const date = new Date().toLocaleDateString("bn-BD", {
-        dateStyle: "full"
-    })
+  const date = new Date().toLocaleDateString("bn-BD", {
+    dateStyle: "full",
+  });
 
   return (
     <div className="bg-[#FAFCFA] border-b border-base-300">
@@ -44,19 +45,24 @@ const Header = () => {
                 <NavLinks />
               </ul>
             </div>
-            <div className="flex items-center gap-2">
-                <Image src={"/logo.png"} alt="logo image" height={60} width={60} className="rounded-lg"/>
+            <Link href={"/"}>
+              <div className="flex items-center gap-2">
+                <Image
+                  src={"/logo.png"}
+                  alt="logo image"
+                  height={60}
+                  width={60}
+                  className="rounded-lg"
+                />
                 <div className="flex flex-col">
-                    <span className="font-bold text-xl leading-7">বাজার দর</span>
-                    <span>{date}</span>
+                  <span className="font-bold text-xl leading-7">বাজার দর</span>
+                  <span>{date}</span>
                 </div>
-            </div>
+              </div>
+            </Link>
           </div>
           <div className="navbar-end gap-5">
-            <Link className="text-sm font-semibold leading-5" href={"/sign-in"}>সাইন ইন</Link>
-            <Link href={"/sign-up"}>
-                <button className="btn py-2.5 px-4.5 rounded-lg bg-[#05893E] text-white text-sm font-semibold leading-5">সাইন আপ</button>
-            </Link>
+            <AuthLinks/>
           </div>
         </div>
       </div>
@@ -69,7 +75,7 @@ const Header = () => {
         </div>
       </div>
       {/* Nav Link end */}
-      <Marquee/>
+      <Marquee />
     </div>
   );
 };

@@ -22,9 +22,10 @@ interface IData {
 
 const Marquee = async () => {
   const res = await fetch("https://api.abcz.workers.dev/api/bazardor/products");
+  // const res = await fetch("https://api.api-store.workers.dev/api/bazardor/products");
   const data:IData[] = await res.json();
   const filteredHeading = data.filter((eachHeading) => eachHeading.change.pct > 0 || eachHeading.change.pct < 0);
-  console.log(filteredHeading);
+  // console.log(filteredHeading);
   return (
     <div className="py-2">
       <MarqueeText direction="right" duration={15} pauseOnHover={true}>
