@@ -12,9 +12,9 @@ const formatBanglaNumber = (value) =>
     maximumFractionDigits: 1,
   });
 
-export default function ProductCard({ riserDataInfo }) {
-  const isUp = riserDataInfo.change.dir === "up";
-  const isDown = riserDataInfo.change.dir === "down";
+export default function FallersCard({ fallerDataInfo }) {
+  const isUp = fallerDataInfo.change.dir === "up";
+  const isDown = fallerDataInfo.change.dir === "down";
 
   const changeStyle = isUp
     ? "bg-[#F0F5F1] text-red-600"
@@ -24,19 +24,19 @@ export default function ProductCard({ riserDataInfo }) {
 
   const changeIcon = isUp ? "▲" : isDown ? "▼" : "•";
 
-  const unitLabel = unitLabels[riserDataInfo.unit] ?? riserDataInfo.unit;
+  const unitLabel = unitLabels[fallerDataInfo.unit] ?? fallerDataInfo.unit;
 
   return (
     <article className="w-full rounded-2xl border border-[#E1E8E1] bg-[#FAFCFA] p-4">
       {/* Product information */}
       <div className="flex items-center gap-3">
         <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#F0F5F1] text-2xl">
-          {riserDataInfo.image || riserDataInfo.categoryIcon}
+          {fallerDataInfo.image || fallerDataInfo.categoryIcon}
         </div>
 
         <div className="min-w-0">
           <h3 className="text-base font-semibold leading-6 text-[#243128]">
-            {riserDataInfo.nameBn}
+            {fallerDataInfo.nameBn}
           </h3>
 
           <p className="text-sm text-[#657168]">
@@ -53,7 +53,7 @@ export default function ProductCard({ riserDataInfo }) {
           </p>
 
           <p className="text-xl font-bold leading-7 text-[#243128]">
-            ৳{formatBanglaNumber(riserDataInfo.today)}
+            ৳{formatBanglaNumber(fallerDataInfo.today)}
             <span className="ml-1 text-sm font-normal">
               টাকা
             </span>
@@ -64,7 +64,7 @@ export default function ProductCard({ riserDataInfo }) {
           className={`mb-1 inline-flex shrink-0 items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold ${changeStyle}`}
         >
           <span className="text-[10px]">{changeIcon}</span>
-          {formatBanglaNumber(Math.abs(riserDataInfo.change.pct))}%
+          {formatBanglaNumber(Math.abs(fallerDataInfo.change.pct))}%
         </span>
       </div>
     </article>
