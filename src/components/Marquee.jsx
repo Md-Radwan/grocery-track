@@ -2,7 +2,7 @@ import MarqueeText from "react-marquee-text";
 import "react-marquee-text/dist/styles.css";
 
 const Marquee = async () => {
-  const res = await fetch("https://api.abcz.workers.dev/api/bazardor/products");
+  const res = await fetch("https://openapi.programming-hero.com/api/bazardor/products");
   // const res = await fetch("https://api.api-store.workers.dev/api/bazardor/products");
   const data = await res.json();
   const filteredHeading = data.filter((eachHeading) => eachHeading.change.pct > 0 || eachHeading.change.pct < 0);

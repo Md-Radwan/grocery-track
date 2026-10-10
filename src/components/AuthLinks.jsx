@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const AuthLinks = () => {
   const { data: session } = useSession();
-  console.log("user session in navbar", session);
+  // console.log("user session in navbar", session);
   return (
     <>
       {session?.user ? (
