@@ -1,6 +1,7 @@
 "use client";
 
 import { signOut, useSession } from "@/lib/auth-client";
+import { Avatar } from "@heroui/react";
 import Link from "next/link";
 
 const AuthLinks = () => {
@@ -10,11 +11,23 @@ const AuthLinks = () => {
     <>
       {session?.user ? (
         <>
-            <span>Welcome, {session.user?.name}</span>
-            
-            <button onClick={() => signOut()} className="btn py-2.5 px-4.5 rounded-lg bg-[#05893E] text-white text-sm font-semibold leading-5">
-              সাইন আউট
-            </button>
+          <Link href={"/profile"} className="flex items-center gap-2">
+            <Avatar>
+              <Avatar.Image
+                alt={session.user.name}
+                src={session.user?.image}
+              />
+              <Avatar.Fallback>{session.user.name.slice(0, 1)}</Avatar.Fallback>
+            </Avatar>
+            <span>{session.user?.name}</span>
+          </Link>
+
+          <button
+            onClick={() => signOut()}
+            className="btn py-2.5 px-4.5 rounded-lg bg-[#05893E] text-white text-sm font-semibold leading-5"
+          >
+            সাইন আউট
+          </button>
         </>
       ) : (
         <>

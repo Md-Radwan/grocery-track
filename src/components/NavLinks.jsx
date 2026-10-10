@@ -1,18 +1,12 @@
 import CategoryLink from "./CategoryLink";
 
-interface Idata{
-    id: number;
-    nameBn: string;
-    icon: string;
-}
-
 const NavLinks = async () => {
   const res = await fetch(
     // "https://api.api-store.workers.dev/api/bazardor/categories"
     "https://api.abcz.workers.dev/api/bazardor/categories"
   );
 
-  const data:Idata[] = await res.json();
+  const data = await res.json();
 
   return (
     <>

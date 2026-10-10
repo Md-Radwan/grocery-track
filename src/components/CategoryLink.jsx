@@ -3,14 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-type Category = {
-  id: number;
-  nameBn: string;
-  icon: string;
-  slug?: string;
-};
-
-const CategoryLink = ({ category }: { category: Category }) => {
+const CategoryLink = ({ category }) => {
   const pathname = usePathname();
 
   const href = `/category/${category.slug || category.id}`;

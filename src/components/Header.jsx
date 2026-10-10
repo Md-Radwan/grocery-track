@@ -54,7 +54,7 @@ const Header = () => {
                   width={60}
                   className="rounded-lg"
                 />
-                <div className="flex flex-col">
+                <div className="md:flex flex-col hidden">
                   <span className="font-bold text-xl leading-7">বাজার দর</span>
                   <span>{date}</span>
                 </div>
