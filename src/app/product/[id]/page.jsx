@@ -1,3 +1,5 @@
+import { Button } from "@heroui/react";
+import Link from "next/link";
 
 const getProducts = async () => {
   const res = await fetch(
@@ -50,9 +52,12 @@ const ProductDetailsPage = async ({ params }) => {
           <h1 className="text-2xl font-bold">
             পণ্য খুঁজে পাওয়া যায়নি!
           </h1>
-          <p className="mt-2 text-gray-500">
+          <p className="mt-2 pb-4 text-gray-500">
             অনুগ্রহ করে অন্য একটি পণ্য নির্বাচন করুন।
           </p>
+          <Link href={"/"}>
+            <Button className="bg-[#06883E] text-white rounded-[8px]">হোম পেজে যান</Button>
+          </Link>
         </div>
       </main>
     );

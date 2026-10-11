@@ -1,7 +1,8 @@
 import AllProductCard from "@/components/AllProductCard";
 import FallersCard from "@/components/FallersCard";
 import RisersCard from "@/components/RisersCard";
-import React from "react";
+import AllProductsSection from "@/components/AllProductsSection";
+
 
 const getProduct = async () => {
   const res = await fetch(
@@ -53,13 +54,15 @@ const ProductPage = async () => {
           );
         })}
       </div>
-      <h2 id="allProduct" className="font-bold text-xl leading-7 mt-10 pb-3">সব পণ্য</h2>
+
+      <AllProductsSection productData={productData} />
+      {/* <h2 id="allProduct" className="font-bold text-xl leading-7 mt-10 pb-3">সব পণ্য</h2>
       <p className="text-sm leading-5 pb-4">মোট ৩৩টি পণ্য দেখানো হচ্ছে</p>
       <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         {productData.map((allProductData) => {
           return <AllProductCard key={allProductData.id} allProductData={allProductData}/>
         })}
-      </div>
+      </div> */}
     </div>
   );
 };
