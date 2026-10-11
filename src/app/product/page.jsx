@@ -53,7 +53,7 @@ const ProductPage = async () => {
           );
         })}
       </div>
-      <h2 className="font-bold text-xl leading-7 mt-10 pb-3">সব পণ্য</h2>
+      <h2 id="allProduct" className="font-bold text-xl leading-7 mt-10 pb-3">সব পণ্য</h2>
       <p className="text-sm leading-5 pb-4">মোট ৩৩টি পণ্য দেখানো হচ্ছে</p>
       <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         {productData.map((allProductData) => {

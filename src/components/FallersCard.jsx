@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const unitLabels = {
@@ -27,7 +28,8 @@ export default function FallersCard({ fallerDataInfo }) {
   const unitLabel = unitLabels[fallerDataInfo.unit] ?? fallerDataInfo.unit;
 
   return (
-    <article className="w-full rounded-2xl border border-[#E1E8E1] bg-[#FAFCFA] p-4">
+    <Link href={`/product/${fallerDataInfo.id}`}>
+      <article className="w-full rounded-2xl border border-[#E1E8E1] bg-[#FAFCFA] p-4">
       {/* Product information */}
       <div className="flex items-center gap-3">
         <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#F0F5F1] text-2xl">
@@ -68,5 +70,6 @@ export default function FallersCard({ fallerDataInfo }) {
         </span>
       </div>
     </article>
+    </Link>
   );
 }

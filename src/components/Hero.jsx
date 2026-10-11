@@ -14,7 +14,9 @@ const Hero = () => {
                     <p className='mt-5 pb-7 text-center md:text-start'>
                         চাল, ডাল, তেল, সবজি, মাছ, মাংস, ডিম ও মসলার দাম — বাজারভিত্তিক বিস্তারিত, গড়, সর্বনিম্ন-সর্বাধিক এবং দামের পরিবর্তন এক জায়গায়।
                     </p>
-                    <button className='rounded-xl bg-[#05893E] py-2.5 px-5.5 text-sm font-semibold text-white cursor-pointer'>সব পণ্য দেখুন</button>
+                    <a href="#allProduct">
+                        <button className='rounded-xl bg-[#05893E] py-2.5 px-5.5 text-sm font-semibold text-white cursor-pointer'>সব পণ্য দেখুন</button>
+                    </a>
                 </div>
                 <div className='w-full md:w-[50%] flex justify-center md:justify-end'>
                     <Image src={"/heroImg.png"} width={315} height={263} alt='hero image'/>
