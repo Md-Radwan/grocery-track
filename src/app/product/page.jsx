@@ -27,7 +27,7 @@ const ProductPage = async () => {
 
   // console.log("riser data", riserData);
   return (
-    <div className="w-7xl mx-auto">
+    <div className="w-7xl mx-auto pb-20">
       <h2 className="font-bold text-xl leading-7 flex gap-2 items-center pb-3">
         <span className="text-[#D03739]">▲</span>
         আজ দাম বেড়েছে
