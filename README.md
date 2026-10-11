@@ -1,27 +1,34 @@
-🛒 বাজার দর | BazarDor
-নিত্যপ্রয়োজনীয় পণ্যের দাম এক নজরে
-A responsive grocery price-tracking web application that helps users explore everyday product prices, compare market rates, and understand daily price changes across Bangladesh.
+# 🛒 বাজার দর (Bazar Dor)
 
-📖 About the Project
-বাজার দর (BazarDor) makes everyday market prices easier to check. Browse products by category, see today's prices in Bengali numerals, track whether prices have increased or decreased, and view product-specific market information after signing in.
-✨ Key Features
-1. 📈 Daily Price Trends — Discover the top six products with rising prices and the top six with falling prices, with clear percentage-change indicators.
-2. 🧺 Product Catalogue & Categories — Explore responsive product cards, browse by category, and sort products by price from low to high or high to low.
-3. 🔎 Product Details & Market Comparison — View product summaries, minimum, maximum, and average prices, plus market-by-market price information.
-4. 🔐 Secure Authentication — Register and sign in with email and password, or use Google and GitHub sign-in through Better Auth. Protected product-detail pages require login.
-5. 📱 Responsive Bengali-first UI — Use the application on mobile, tablet, or desktop, with a price ticker, clear loading skeletons, helpful error states, and toast notifications.
-🧰 Technologies Used
-Technology	Purpose
-Next.js	React framework and App Router
-React	Interactive user interface
-Tailwind CSS	Responsive styling and layout
-HeroUI	UI components
-Better Auth	Email/password and social authentication
-BazarDor REST API	Product, category, and price data
+**Know today's grocery prices. Compare markets. Shop smarter.**
 
-🔌 Data Source
-Product and category information is loaded from the BazarDor API used by the project. Keep API URLs and data types consistent with the endpoints configured in your application.
-📌 Project Goal
-Make everyday grocery-price information easier to explore and compare through a clear, accessible, and Bengali-friendly interface.
-বাজার দর — প্রয়োজনীয় পণ্যের দাম এক নজরে।
-সকল দাম সম্ভাব্য; বাজার অবস্থার ওপর নির্ভর করে পরিবর্তিত হয়।
+বাজার দর is a grocery price tracking web application designed to help people check current grocery prices, discover products with rising or falling prices, and make more informed shopping decisions. The homepage highlights the top six price risers and fallers alongside the full product list. Each product also has a detail page showing today's prices across different markets.
+
+## ✨ Key Features
+
+1. **Top 6 Price Risers** — Quickly discover the six products with the biggest price increases.
+2. **Top 6 Price Fallers** — Spot the six products whose prices have decreased, helping you find potential savings.
+3. **Browse All Products** — Explore the available grocery products and their latest listed prices from the homepage.
+4. **Market-wise Price Details** — Open a product's detail page to view today's price across different markets and compare prices before shopping.
+5. **Smarter Grocery Planning** — Use price trends and market comparisons to track grocery costs and make better-informed shopping decisions.
+
+## 🧰 Technologies Used
+
+- **[Next.js](https://nextjs.org/)** — React framework for building the web application
+- **[Better Auth](https://www.better-auth.com/)** — Authentication and user sign-in functionality
+- **MongoDB** — Database
+- **MongoDB Adapter** — Database integration for the authentication setup
+- **[Tailwind CSS](https://tailwindcss.com/)** — Utility-first styling
+- **[Hero UI](https://www.heroui.com/)** — UI components
+- **[daisyUI](https://daisyui.com/)** — Tailwind CSS component library
+- **[React Marquee Text](https://www.npmjs.com/package/react-marquee-text)** — Scrolling text effects
+- **[React Toastify](https://fkhadra.github.io/react-toastify/)** — Toast notifications
+
+## 🎯 Why বাজার দর?
+
+Grocery prices can vary over time and from one market to another. বাজার দর brings useful price information together so shoppers can review trends, compare market-wise prices, and plan purchases with more confidence.
+
+---
+
+**Project:** বাজার দর (Bazar Dor)  
+**Purpose:** Grocery price discovery, comparison, and tracking
