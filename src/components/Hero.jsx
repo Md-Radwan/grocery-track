@@ -7,7 +7,7 @@ const Hero = () => {
     })
     return (
         <div className='pt-6 pb-10'>
-            <div className='container mx-auto flex flex-col md:flex-row md:justify-between md:items-center rounded-[24px] bg-[#FBFCFA] px-4 py-5'>
+            <div className='w-7xl mx-auto flex flex-col md:flex-row md:justify-between md:items-center rounded-[24px] bg-[#FBFCFA] px-4 py-5'>
                 <div className='w-full md:w-[50%] flex flex-col items-center md:items-start'>
                     <p className='bg-[#E6F0E7] rounded-[14px] text-[#05893E] px-3 py-1 font-medium leading-5 text-sm inline'>{date}</p>
                     <h1 className='font-bold text-4xl leading-11 mt-2 text-center md:text-start'>আজকের বাজারের দাম এক নজরে</h1>
