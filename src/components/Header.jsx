@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <div className="bg-[#FAFCFA] border-b border-base-300">
       <div className="navbar border-b border-base-300">
-        <div className="w-7xl mx-auto">
+        <div className="w-full lg:w-6xl mx-auto">
           <div className="navbar-start">
             <div className="dropdown">
               <div
@@ -68,7 +68,7 @@ const Header = () => {
       </div>
       {/* Nav Link start */}
       <div className="border-b border-base-300">
-        <div className="w-7xl mx-auto hidden lg:flex">
+        <div className="w-full lg:w-6xl mx-auto hidden lg:flex">
           <ul className="menu menu-horizontal gap-2 text-sm font-semibold">
             <NavLinks />
           </ul>

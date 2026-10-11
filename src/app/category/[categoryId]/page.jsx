@@ -18,7 +18,7 @@ const Page = async ({ params }) => {
 
   return (
     <div className="bg-[#F0F5F0]">
-      <div className="mx-auto w-full pb-10 lg:w-7xl">
+      <div className="mx-auto w-full pb-10 lg:w-6xl px-3 lg:px-0">
         {/* Category banner */}
         <div className="py-6">
           {categoryInfo && (

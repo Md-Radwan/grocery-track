@@ -29,7 +29,7 @@ const CategoryProductSort = ({ products }) => {
         <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-end">
           <label
             htmlFor="categoryProductSort"
-            className="text-sm font-medium text-gray-700"
+            className="text-sm font-medium text-gray-700 hidden md:block"
           >
             সাজান:
           </label>

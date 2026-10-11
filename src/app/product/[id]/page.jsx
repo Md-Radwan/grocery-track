@@ -48,7 +48,7 @@ const ProductDetailsPage = async ({ params }) => {
   if (!product) {
     return (
       <main className="min-h-screen bg-[#F0F5F0] p-6 text-white">
-        <div className="mx-auto max-w-7xl rounded-2xl bg-[#f8fbf8] p-8 text-center text-gray-800">
+        <div className="mx-auto w-full lg:w-6xl max-w-6xl rounded-2xl bg-[#f8fbf8] p-8 text-center text-gray-800">
           <h1 className="text-2xl font-bold">
             পণ্য খুঁজে পাওয়া যায়নি!
           </h1>
@@ -113,7 +113,7 @@ const ProductDetailsPage = async ({ params }) => {
 
   return (
     <main className="min-h-screen bg-[#F0F5F0] px-4 py-8 text-[#202a22] sm:px-6">
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto w-full lg:w-6xl max-w-6xl">
         {/* Breadcrumb */}
         <nav className="mb-8 flex flex-wrap items-center gap-2 text-sm text-[#69766b]">
           <span>হোম</span>
